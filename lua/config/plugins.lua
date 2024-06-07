@@ -25,7 +25,7 @@ require("lazy").setup({
    -- Nvim Tree (file explorer)
    {'nvim-tree/nvim-tree.lua', lazy=true, dependencies = {'nvim-tree/nvim-web-devicons'}},
   -- Telescope (fuzzy finder)
-  {"nvim-telescope/telescope.nvim", lazy=true, requires = { {'nvim-lua/plenary.nvim'} }},
+  {"nvim-telescope/telescope.nvim", lazy=true, dependencies = { {'nvim-lua/plenary.nvim'} }},
   -- Rose Pine (colors)
   {'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end},
   -- Treesitter
@@ -35,5 +35,4 @@ require("lazy").setup({
   {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }};
   -- Bufferline
   {'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
- 
 })
