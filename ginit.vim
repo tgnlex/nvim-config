@@ -1,7 +1,7 @@
 let s fontsize = 12
 function! AdjustFontSize(amount)
-  let s:fontsize = s:fontsize+a:amount 
-  :exectute "GuiFont! Consolas:h" . s:fontsize
+  let s:fontsize = s:fontsize+a:amount
+  :execute "GuiFont! Consolas:h" . s:fontsize
 endfunction
 
 noremap <C-ScrollWheelUp> :call AdjustFontSize(1)<CR>

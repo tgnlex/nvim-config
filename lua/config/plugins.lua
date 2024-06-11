@@ -48,7 +48,8 @@ require("lazy").setup({
    {'nvim-tree/nvim-tree.lua', lazy=true, dependencies = {'nvim-tree/nvim-web-devicons'}},
   -- Telescope (fuzzy finder)
   {"nvim-telescope/telescope.nvim", lazy=true, dependencies = { {'nvim-lua/plenary.nvim'} }},
-
+  -- NVIM TREE 
+  {'kyazdani42/nvim-tree.lua'},
   -- Treesitter
   {'nvim-treesitter/nvim-treesitter', run=':TSUpdate'},
   {'nvim-treesitter/playground'},
