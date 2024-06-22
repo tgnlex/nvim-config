@@ -11,10 +11,7 @@ dash.section.buttons.val = {
   btn("r", "  Recently used files", ":Telescope oldfiles <CR>"),
   btn("t", "  Find text", ":Telescope live_grep <CR>"),
   btn("c", "  Configuration", ":e ~/.config/nvim/<CR>"),
-  btn("w", "Work folder", ":e ~/desktop/work/ <CR>"), 
-  btn("p", "Projects folder", ":e ~/desktop/work/projects <CR>"), 
-  btn("k", "Kits folder", ":e ~/desktop/work/lib/ <CR>"),
-  btn("w", "Web Kits folder", ":e ~/desktop/work/web-lib <CR>"),
+  btn("w", 'Code folder', ':e /home/tgn/code/'),
   btn("q", "  Quit Neovim", ":qa<CR>"),
 }
 

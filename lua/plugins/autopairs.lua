@@ -1,9 +1,10 @@
 local status_ok, npairs = pcall(require, "nvim-autopairs")
-if not status_ok then 
-  return 
+if not status_ok then
+  print("Error while trying to load autopairs", npairs)
+  return
 end
 npairs.setup {
-  check_ts = true, 
+  check_ts = true,
   ts_config = {
     lua = {"string", "source" },
     javascripts = {"string", "template_string"}, 
@@ -16,7 +17,7 @@ npairs.setup {
     pattern = string.gsub([[ [%'%"%)%>%]%)%}%,] ]], "%s+", ""),
     offset = 0,
     keys = "qwertyuiopzxcvbnmasdfghjkl",
-    check_comma = true, 
+    check_comma = true,
     highlight = "PmenuSel",
     highlight_grey = "LineNr",
   },

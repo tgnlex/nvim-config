@@ -91,3 +91,4 @@ cmp.setup {
     native_menu = false,
   }
 }
+

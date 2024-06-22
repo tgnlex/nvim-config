@@ -6,8 +6,7 @@ local set = function(mode, map, cmd)
 end
 vim.g.mapleader = " ";
 -- Normal
-
-set("n", "<leader>pv", vim.cmd.Ex) 
+-- set("n", "<leader>pv", vim.cmd.Ex)
 keymap("n", "<leader>pv", ":Ex<CR>", opts)
 keymap("n", "<leader>u", ":UndotreeShow<CR>", opts)
 keymap("n", "J", "mzJ`z", opts)

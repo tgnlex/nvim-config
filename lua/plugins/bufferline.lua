@@ -5,12 +5,11 @@ end
 
 bufferline.setup {
       options = {
-        numbers = "none", 
-        close_command = "Bdelete! %d", 
-        right_mouse_command = "Bdelete! %d", 
+        numbers = "none",
+        close_command = "Bdelete! %d",
+        right_mouse_command = "Bdelete! %d",
         left_mouse_command = "buffer %d",
-        middle_mouse_command = nil, 
-        
+        middle_mouse_command = nil,
         max_name_length = 30,
         max_prefix_length = 30,
         tab_size = 21,
@@ -22,7 +21,7 @@ bufferline.setup {
         show_buffer_close_icons = true,
         show_close_icon = true,
         show_tab_indicators = true,
-        persist_buffer_sort = true, 
+        persist_buffer_sort = true,
         separator_style = "thin",
         enforce_regular_tabs = true,
         always_show_bufferline = true,

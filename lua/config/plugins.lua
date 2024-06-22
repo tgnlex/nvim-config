@@ -18,8 +18,7 @@ require("lazy").setup({
   {'nvim-tree/nvim-web-devicons'},
   {"numToStr/Comment.nvim"},
   -- ColorSchemes 
-  {'lunarvim/darkplus.nvim'},
-  {'rose-pine/neovim', as = 'rose-pine', config = function() vim.cmd('colorscheme rose-pine') end},
+  {'catppuccin/nvim', name="catppuccin", priority=1000},
   -- CMP plugins 
   {"windwp/nvim-autopairs"},
   {"hrsh7th/nvim-cmp"},
@@ -31,7 +30,8 @@ require("lazy").setup({
   -- Snippets
   {"L3MON4D3/LuaSnip"},
   {"rafamadriz/friendly-snippets"},
-  -- LSP CONFIG -- 
+  {"folke/neoconf.nvim"},
+        -- LSP CONFIG -- 
   {"neovim/nvim-lspconfig"},
   {"williamboman/mason.nvim"},
   {"williamboman/mason-lspconfig.nvim"},
@@ -56,10 +56,10 @@ require("lazy").setup({
   {'JoosepAlviste/nvim-ts-context-commentstring'},
   -- GIT 
   {"lewis6991/gitsigns.nvim"},
-  -- Dashboard
-
+  {"pluffie/neoproj",  cmd={ "ProjectOpen", "ProjectNew"}},
   
-  {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }};
+  {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }},
   -- Bufferline
   {'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
+  {"ThePrimeagen/harpoon", branch = "harpoon2", requires = { {"nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim'}}},
 })
