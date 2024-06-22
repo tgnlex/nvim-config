@@ -4,7 +4,6 @@ require ("config.remap")
 require ("config.plugins")
 require ("config.cmp")
 require ("config.theme")
-require ("config.autocmd")
 -- LSP CONFIG
 require("plugins.neoconf")
 require("lsp")
@@ -20,3 +19,5 @@ require ("plugins.toggleterm")
 require ("plugins.harpoon")
 require ("plugins.comment")
 require ("plugins.gitsigns")
+
+require {"macros.save_session"
