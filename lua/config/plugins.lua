@@ -16,7 +16,14 @@ require("lazy").setup({
   {'nvim-lua/plenary.nvim'},
   {'nvim-lua/popup.nvim'},
   {'nvim-tree/nvim-web-devicons'},
+  {"JoosepAlviste/nvim-ts-context-commentstring"},
+  {"moll/vim-bbye"},
+   -- Basic 
   {"numToStr/Comment.nvim"},
+  {"lewis6991/impatient.nvim"},
+  {"ahmedkhalf/project.nvim"},
+  { "antoinemadec/FixCursorHold.nvim"},
+  {"lukas-reineke/indent-blankline.nvim"},
   -- ColorSchemes 
   {'catppuccin/nvim', name="catppuccin", priority=1000},
   -- CMP plugins 
@@ -57,9 +64,20 @@ require("lazy").setup({
   -- GIT 
   {"lewis6991/gitsigns.nvim"},
   {"pluffie/neoproj",  cmd={ "ProjectOpen", "ProjectNew"}},
-  
+
   {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }},
   -- Bufferline
   {'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
+  {'akinsho/toggleterm.nvim'},
   {"ThePrimeagen/harpoon", branch = "harpoon2", requires = { {"nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim'}}},
+  {"nvim-neotest/neotest", 
+    dependencies = {
+      "nvim-neotest/nvim-nio",
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-treesitter/nvim-treesitter"
+    },
+  }
+
+
 })
