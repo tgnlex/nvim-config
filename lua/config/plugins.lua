@@ -76,6 +76,10 @@ require("lazy").setup({
   {'JoosepAlviste/nvim-ts-context-commentstring'},
   -- GIT 
   {"lewis6991/gitsigns.nvim"},
+  -- Rust tools --
+  {'mfusseneggar/nvim-dap'},
+  {'rcarriga/nvim-dap-ui'},
+   {'simrat39/rust-tools.nvim'},
   {"pluffie/neoproj",  cmd={ "ProjectOpen", "ProjectNew"}},
   {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }},
   {"iamcco/markdown-preview.nvim"},
