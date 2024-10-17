@@ -20,10 +20,14 @@ require("lazy").setup({
   {"moll/vim-bbye"},
    -- Basic 
   {"numToStr/Comment.nvim"},
+  {"mattn/emmet-vim"}
   {"lewis6991/impatient.nvim"},
   {"ahmedkhalf/project.nvim"},
   { "antoinemadec/FixCursorHold.nvim"},
   {"lukas-reineke/indent-blankline.nvim"},
+  {"dracula/vim"},
+  {"ellisonleao/gruvbox.nvim"},
+  {"nvim-lualine/lualine.nvim"},
   -- ColorSchemes 
   {'catppuccin/nvim', name="catppuccin", priority=1000},
   -- CMP plugins 
@@ -45,6 +49,15 @@ require("lazy").setup({
   {"tamago324/nlsp-settings.nvim"},
   {"williamboman/nvim-lsp-installer"},
   {'jose-elias-alvarez/null-ls.nvim'},
+  -- Tmux --- 
+  {"preservim/vimux"},
+  {"christoomey/vim-tmux-navigator"},
+  -- Vim fugitive ---
+  {"tpope/vim-fugitive"},
+  -- Vim surround --
+  {"tpope/vim-surround"},
+  {"stevearc/oil.nvim"},
+  -- completion
   -- Which Key
   {"folke/which-key.nvim", lazy=true},
   -- NeoDev
@@ -64,8 +77,8 @@ require("lazy").setup({
   -- GIT 
   {"lewis6991/gitsigns.nvim"},
   {"pluffie/neoproj",  cmd={ "ProjectOpen", "ProjectNew"}},
-
   {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }},
+  {"iamcco/markdown-preview.nvim"},
   -- Bufferline
   {'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
   {'akinsho/toggleterm.nvim'},

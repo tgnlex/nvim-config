@@ -2,13 +2,14 @@
 require ("config.options")
 require ("config.remap")
 require ("config.plugins")
-require ("config.theme")
-require ("config.neoconf")
+-- Theme --
+require ("themes.catpuccin")
 -- Language Server Protocol 
 require("lsp")
 -- Plugins 
 require ("plugins.cmp")
 require ("plugins.telescope")
+require ("plugins.lualine")
 require ("plugins.bufferline")
 require ("plugins.autopairs")
 require ("plugins.treesitter")
@@ -23,7 +24,14 @@ require ("plugins.indentline")
 require ("plugins.project")
 require ("plugins.whichkey")
 require ("plugins.neotest")
--- Scripts
-require ("scripts.autocom")
-require ("scripts.save_session")
+require ("plugins.neoconf")
+require("plugins.oil")
+require("plugins.dap")
+-- Language tools --
+require("tools.rust")
+-- Auto Commands --
+require("autocmd.save-session")
+-- Scripts --
+require ("scripts.commands")
+require ("scripts.markdown")
 
