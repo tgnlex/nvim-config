@@ -2,6 +2,7 @@
 require ("config.options")
 require ("config.remap")
 require ("config.plugins")
+require ("config.neoconf")
 -- Theme --
 require ("config.themes.catpuccin")
 -- Language Server Protocol 
@@ -24,7 +25,7 @@ require ("plugins.indentline")
 require ("plugins.project")
 require ("plugins.whichkey")
 require ("plugins.neotest")
-require ("plugins.neoconf")
+
 require("plugins.oil")
 require("plugins.dap")
 require("plugins.vim-test")
