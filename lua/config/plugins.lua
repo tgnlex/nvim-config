@@ -20,7 +20,7 @@ require("lazy").setup({
   {"moll/vim-bbye"},
    -- Basic 
   {"numToStr/Comment.nvim"},
-  {"mattn/emmet-vim"}
+  {"mattn/emmet-vim"},
   {"lewis6991/impatient.nvim"},
   {"ahmedkhalf/project.nvim"},
   { "antoinemadec/FixCursorHold.nvim"},
@@ -82,6 +82,7 @@ require("lazy").setup({
   -- Bufferline
   {'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
   {'akinsho/toggleterm.nvim'},
+  {'vim-test/vim-test'},
   {"ThePrimeagen/harpoon", branch = "harpoon2", requires = { {"nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim'}}},
   {"nvim-neotest/neotest", 
     dependencies = {

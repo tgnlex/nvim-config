@@ -3,9 +3,9 @@ require ("config.options")
 require ("config.remap")
 require ("config.plugins")
 -- Theme --
-require ("themes.catpuccin")
+require ("config.themes.catpuccin")
 -- Language Server Protocol 
-require("lsp")
+require("config.lsp")
 -- Plugins 
 require ("plugins.cmp")
 require ("plugins.telescope")
@@ -27,6 +27,7 @@ require ("plugins.neotest")
 require ("plugins.neoconf")
 require("plugins.oil")
 require("plugins.dap")
+require("plugins.vim-test")
 -- Language tools --
 require("tools.rust")
 -- Auto Commands --
