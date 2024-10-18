@@ -1,0 +1,7 @@
+require("core.commands.general")
+require("core.commands.git")
+require("core.commands.markdown")
+require("core.commands.autosize")
+require("core.commands.dashboard")
+require("core.commands.save-sess")
+require("core.commands.vim-test")
