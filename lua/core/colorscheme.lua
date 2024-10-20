@@ -1,1 +1,0 @@
-require ("core.themes.catpuccin")

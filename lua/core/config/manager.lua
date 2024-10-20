@@ -24,9 +24,11 @@ require("lazy").setup({
   {"lewis6991/impatient.nvim"},
   {"ahmedkhalf/project.nvim"},
   { "antoinemadec/FixCursorHold.nvim"},
-  {"lukas-reineke/indent-blankline.nvim"},
+  {"lukas-reineke/indent-blankline.nvim", main = "ibl", opts={}},
   {"dracula/vim"},
+  --Gruvbox
   {"ellisonleao/gruvbox.nvim"},
+  --Lualine
   {"nvim-lualine/lualine.nvim"},
   -- ColorSchemes 
   {'catppuccin/nvim', name="catppuccin", priority=1000},
@@ -57,7 +59,6 @@ require("lazy").setup({
   -- Vim surround --
   {"tpope/vim-surround"},
   {"stevearc/oil.nvim"},
-  -- completion
   -- Which Key
   {"folke/which-key.nvim", lazy=true},
   -- NeoDev
@@ -76,9 +77,10 @@ require("lazy").setup({
   {'JoosepAlviste/nvim-ts-context-commentstring'},
   -- GIT 
   {"lewis6991/gitsigns.nvim"},
-  -- Rust tools --
-  {'mfusseneggar/nvim-dap'},
+-- Dap
+  {'mfussenegger/nvim-dap'},
   {'rcarriga/nvim-dap-ui'},
+    -- Rust tools --
    {'simrat39/rust-tools.nvim'},
   {"pluffie/neoproj",  cmd={ "ProjectOpen", "ProjectNew"}},
   {'goolord/alpha-nvim', lazy = true, dependencies = { 'nvim-tree/nvim-web-devicons' }},
@@ -87,6 +89,7 @@ require("lazy").setup({
   {'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
   {'akinsho/toggleterm.nvim'},
   {'vim-test/vim-test'},
+  {'eldritch-theme/eldritch.nvim'},
   {"ThePrimeagen/harpoon", branch = "harpoon2", requires = { {"nvim-lua/plenary.nvim", 'nvim-telescope/telescope.nvim'}}},
   {"nvim-neotest/neotest", 
     dependencies = {
